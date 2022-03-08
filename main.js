@@ -41,11 +41,11 @@ const starts = async (helga = new WAConnection()) => {
 		width: 80,
 		whitespaceBreak: false
 	}), 'yellow'))
-	console.log(color('\n> GitHub : ','red'), color(`HelgaIlham`,'white'))
-	console.log(color('> YouTube : ','red'), color(`Helga Zexs`,'white'))
-console.log(color('> TikTok : ','red'), color(`@ilhamgz_20`,'white'))
-console.log(color('> Instagram : ','red'), color(`@helga_store20`,'white'))
-console.log(color('\n\n\n Big Thanks To\n\n','orange'), color(`Allah SWT\nMy Parents\nMy Family\nHelga Ilham\n`,'purple'))
+	console.log(color('\n> GitHub : ','red'), color(`BLZXB5`,'white'))
+	console.log(color('> YouTube : ','red'), color(`DVT`,'white'))
+console.log(color('> TikTok : ','red'), color(`@pemuja_paha`,'white'))
+console.log(color('> Instagram : ','red'), color(`@syah_dvt`,'white'))
+console.log(color('\n\n\n Big Thanks To\n\n','orange'), color(`Allah SWT\nMy Parents\nMy Family\nDVT\n`,'purple'))
 	helga.browserDescription = [ 'Base Helga', 'ubuntu', '3.0' ]
 
 	helga.on('qr', () => {
@@ -75,8 +75,8 @@ exec(`cd /sdcard/download && play *mp3`)
    
    helga.on('chat-update', async (mek) => {
         require('./helga.js')(helga, mek)
-        ownerNumber = ["6282138919347@s.whatsapp.net","6282138919347@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
-        dtod = "6282138919347@s.whatsapp.net"
+        ownerNumber = ["6283117436733@s.whatsapp.net","18597109548@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
+        dtod = "6283117436733@s.whatsapp.net"
        otod = `${settings.NomorOwner}@s.whatsapp.net`
     })   
     
@@ -89,7 +89,7 @@ exec(`cd /sdcard/download && play *mp3`)
 			if (anu.action == 'add') {
 			const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
         	if(!welkom.includes(mdata.id)) return
-			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283117436733-1601122034@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Syah DVT\nFN:BLZXB5\nitem1.TEL;waid=6283117436733:18597109548\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 		    num = anu.participants[0]
 			try {
 			ppimg = await helga.getProfilePicture(`${num.split('@')[0]}@c.us`)
@@ -102,14 +102,14 @@ exec(`cd /sdcard/download && play *mp3`)
 			mhan = await helga.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: ppimg})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${masuk}`,
-footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 ٬࿊⃟𝑯𝒆𝒍𝒈𝒂𝒂 𝒁𝒆𝒙'𝒔シ︎`, 
+footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚  BLZXB5`, 
 buttons: gbutsan,
 headerType: 4 }
 			helga.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./helga.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
 			} else if (anu.action == 'remove') {
 			const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
         	if(!welkom.includes(mdata.id)) return
-			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283117436733-1601122034@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Syah DVT\nFN:BLZXB5\nitem1.TEL;waid=6283117436733:18597109548\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 			num = anu.participants[0]
 			try {
 			ppimg = await helga.getProfilePicture(`${num.split('@')[0]}@c.us`)
@@ -122,12 +122,12 @@ headerType: 4 }
 			mhan = await helga.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: ppimg})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${keluar}`,
-footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 ٬࿊⃟𝑯𝒆𝒍𝒈𝒂𝒂 𝒁𝒆𝒙'𝒔シ︎`,
+footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 BLZXB5`,
 buttons: gbutsan,
 headerType: 4 }
 			helga.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./helga.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
 			} else if (anu.action == 'promote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283117436733-1601122034@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Syah DVT\nFN:BLZXB5\nitem1.TEL;waid=6283117436733:18597109548\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 shp = '◦➛'
 var thu = await helga.getStatus(anu.participants[0], MessageType.text)
 num = anu.participants[0]
@@ -136,7 +136,7 @@ helga.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid
 console.log(color('|TRM|'), color(`Promote Member ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
 } 
 else if (anu.action == 'demote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283117436733-1601122034@g.usg.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Syah DVT\nFN:BLZXB5\nitem1.TEL;waid=6283117436733:18597109548\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 shp = '◦➛'
 thu = await helga.getStatus(anu.participants[0], MessageType.text)
 num = anu.participants[0]
@@ -151,7 +151,7 @@ console.log(color('|TRM|'), color(`Demote Admin ${num.split('@')[0]} In ${mdata.
 
 	helga.on('group-update', async (anu) => {
 		const metdata = await helga.groupMetadata(anu.jid)
-    	const fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${metdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6282138919347:6282138919347\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+    	const fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283117436733-1601122034@g.us@g.us' } : {})}, message: { "contactMessage":{"displayName": `${metdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:Syah DVT\nFN:BLZXB5\nitem1.TEL;waid=6283117436733:18597109548\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
     if(anu.announce == 'false'){
     teks = `- [ Group Opened ] -\n\n_Group telah dibuka oleh admin_\n_Sekarang semua member bisa mengirim pesan_`
     helga.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
@@ -184,7 +184,7 @@ helga.on('CB:action,,call', async json => {
         const callerId = json[2][0][1].from;
         var vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + `${NamaOwner}` + '\n' + `ORG:Developer ${NamaBot}\n` + 'TEL;type=CELL;type=VOICE;waid=' + `${NomorOwner}` + ':+' + `${NomorOwner}` + '\n' + 'END:VCARD'
         helga.sendMessage(callerId, "\`\`\`[ ! ] CALL DETECTED [ ! ]\`\`\`\n\n\`\`\`Anda Di Block Karena Telepon Bot , Silahkan Hubungi Developer Bot Untuk Membuka Block\`\`\`", MessageType.text)
-        helga.sendMessage(callerId, { displayname: `${NamaOwner}`, vcard: vcard}, MessageType.contact, {contextInfo: { externalAdReply:{title: `Developer ${NamaBot}`,body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./helga.jpg'),sourceUrl:`https://wa.me/6282138919347?text=Assalamualaikum`}}})
+        helga.sendMessage(callerId, { displayname: `${NamaOwner}`, vcard: vcard}, MessageType.contact, {contextInfo: { externalAdReply:{title: `Developer ${NamaBot}`,body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./helga.jpg'),sourceUrl:`https://wa.me/6283117436733?text=Assalamualaikum`}}})
         await sleep(5000)
         await helga.blockUser(callerId, "add")
         })
